@@ -19,7 +19,10 @@ const tests = {
 
     assert(process.env.FOO_PROD === 'BAR_PROD');
     assert(process.env.BAZ_PROD === 'BUZZ_PROD');
-  }
+  },
+  emptyOptions: () => {
+    envLoder.load();
+  },
 }
 
 for (const test in tests) {
