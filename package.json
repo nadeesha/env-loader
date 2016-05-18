@@ -1,0 +1,26 @@
+{
+  "name": "env-loader",
+  "version": "0.0.1",
+  "description": "Environment loader for node.js applications",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rm -rf build && babel *.js --out-dir build/",
+    "test": "babel-node test/loadFile.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "env",
+    "enviornment",
+    "variables",
+    "utils"
+  ],
+  "author": "Nadeesha Cabral",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
+}
